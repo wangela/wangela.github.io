@@ -16,7 +16,20 @@ body, html {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  article {
+    min-width: 50%;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 0;
+    padding: 20px;
+    align-content: flex-start;
+    align-items: flex-start;
+
+  }
+}
+
+@media screen and (min-width: 769px) {
   article {
     min-width: 33%;
     max-width: 33%;
@@ -87,7 +100,6 @@ h2 {
   font-size: 24px;
   font-weight: 200;
   text-transform: uppercase;
-  text-align: center;
 }
 
 a {
@@ -125,10 +137,30 @@ a {
   color: #ccc;
 }
 
+.portfolio-header {
+  margin-top: 10px;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.portfolio-type {
+  text-align: left;
+  float: left;
+}
+
+.portfolio-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  width: 7em;
+}
+
 .portfolio-link {
   font-size: 18px;
   text-align: center;
   color: #555;
+  clear: both;
 }
 
 .portfolio-a {
