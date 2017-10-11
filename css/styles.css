@@ -102,6 +102,13 @@ h2 {
   text-transform: uppercase;
 }
 
+h2.portfolio-name {
+  display: inline;
+  text-align: right;
+  float: right;
+  width: 7em;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -132,8 +139,8 @@ a {
 }
 
 #portfolio-title {
-  font-size: 32px;
-  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 5px;
   color: #ccc;
 }
 
@@ -146,14 +153,6 @@ a {
 .portfolio-type {
   text-align: left;
   float: left;
-}
-
-.portfolio-name {
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: right;
-  float: right;
-  width: 7em;
 }
 
 .portfolio-link {
