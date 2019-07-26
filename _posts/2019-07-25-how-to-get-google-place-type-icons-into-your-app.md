@@ -15,7 +15,7 @@ When building the sample above, I ran into a common problem: Where will I get th
 Luckily, our friends in Material Design have provided [Material Icons](http://google.github.io/material-design-icons/)! They explain the beauty of these icons best:
 > Each icon is created using our design guidelines to depict in simple and minimal forms the universal concepts used commonly throughout a UI. Ensuring readability and clarity at both large and small sizes, these icons have been optimized for beautiful display on all common platforms and display resolutions.
 
-Since I built this as a web app, I used the [icon font using Gogole Web Fonts](http://google.github.io/material-design-icons/#icon-font-for-the-web). In the `<head>` of my HTML page, I only needed to add this line:
+Since I built this as a web app, I used the [icon font using Google Web Fonts](http://google.github.io/material-design-icons/#icon-font-for-the-web). In the `<head>` of my HTML page, I only needed to add this line:
 ```html
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
