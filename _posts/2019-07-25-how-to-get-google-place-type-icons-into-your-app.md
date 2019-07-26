@@ -9,6 +9,7 @@ Google Maps Platform just [announced new features](https://goo.gle/new-autocompl
 As a developer, you can make use of this new types information to improve how you display places in Autocomplete. But how do you get the icons for every place type? And what if I want to use those icons in other parts of my UI, like in the results of a nearby search?
 
 ![Screenshot of autocomplete with place type icons from the announcement blog post](/assets/img/autocomplete-types.png){: .center-image }
+*Screenshot of autocomplete with place type icons from the [announcement blog post](https://goo.gle/new-autocomplete-blog)*
 
 When building the sample above, I ran into a common problem: Where will I get those images? I'm for sure not going to create custom icons myself, and I'd like to use the same icons Google uses to take advantage of the user recognition of those icons from the Google Maps app. Even better if I could have Google host the icons for me so I don't have to maintain them myself...
 
@@ -20,13 +21,8 @@ Since I built this as a web app, I used the [icon font using Google Web Fonts](h
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
-I wrote a small JavaScript function to check whether a selected type was in the prediction's `types` property, and if it matched one that I wanted to differentiate with a special icon, I populated that icon with the material icon that I thought best matched the type. To find the icon I wanted for each type, I browsed the [Material Icons Library](https://material.io/resources/icons/) and used the name below the icon to reference in my code. By default, I am using the generic place icon.
+I wrote a JavaScript function to check whether a selected type was in the prediction's `types` property, and if it matched one that I wanted to differentiate with a special icon, I populated that icon with the material icon that I thought best matched the type. To find the icon I wanted for each type, I browsed the [Material Icons Library](https://material.io/resources/icons/) and used the name below the icon to reference in my code. By default, I am using the generic place icon.
 ```javascript
-// Checks whether a place prediction's types list contains a specific type
-function checkTypes(types, type) {
-    return types.includes(type);
-}
-
 // Builds a div for each prediction with the appropriate icon
 function populate(predictions) {
     predictions.forEach(element => {

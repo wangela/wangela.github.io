@@ -27,7 +27,7 @@
 }
 .project-name-override {
     margin-top: 0;
-    margin-bottom: 0.1rem;
+    margin-bottom: -0.5rem;
   
     @include large {
       font-size: 2rem;
@@ -65,4 +65,10 @@
     margin: 0 auto;
     display: block;
     max-width: 600px;
+}
+
+img + em { 
+  display: block; 
+  text-align: center;
+  font-size: 0.75rem;
 }
